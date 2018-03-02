@@ -4,48 +4,50 @@ using namespace std;
 
 int main()
 {
-    int cantidad,copia,a,b,c,d,e,f,h,i,j;
+    int cantidad,a; //Declaracion de variables
     cout << "Ingrese la cantidad: "<< endl;
     cin>> cantidad;
 
-    copia=cantidad;
+    a=cantidad / 50000;        //Se mira cuantas veces 50000 está en la cantidad ingresada
+    cantidad=cantidad-(a*50000); //Se genera la nueva cantidad sin restando cuantas veces está 50000
+    cout<<"50000 : "<<a<<endl;  //Se imprime cuantas veces esta 50000
 
-    a=cantidad / 50000;
-    cantidad=cantidad-(a*50000);
-    cout<<"50000 : "<<a<<endl;
+    a=cantidad/20000;           //En este cuadro se hace el mismo procedimiento que en el anterior, y asi en todos.
+    cantidad=cantidad-(a*20000);
+    cout<<"20000 : "<<a<<endl;
 
-    b=cantidad/20000;
-    cantidad=cantidad-(b*20000);
-    cout<<"20000 : "<<b<<endl;
+    a=cantidad/10000;
+    cantidad=cantidad-(a*10000);
+    cout<<"10000 : "<<a<<endl;
 
-    c=cantidad/10000;
-    cantidad=cantidad-(c*10000);
-    cout<<"10000 : "<<c<<endl;
+    a=cantidad/5000;
+    cantidad=cantidad-(a*5000);
+    cout<<"5000 : "<<a<<endl;
 
-    d=cantidad/5000;
-    cantidad=cantidad-(d*5000);
-    cout<<"5000 : "<<d<<endl;
+    a=cantidad/2000;
+    cantidad=cantidad-(a*2000);
+    cout<<"2000 : "<<a<<endl;
 
-    e=cantidad/2000;
-    cantidad=cantidad-(e*2000);
-    cout<<"2000 : "<<e<<endl;
+    a=cantidad/1000;
+    cantidad=cantidad-(a*1000);
+    cout<<"1000 : "<<a<<endl;
 
-    f=cantidad/1000;
-    cantidad=cantidad-(f*1000);
-    cout<<"1000 : "<<f<<endl;
+    a=cantidad/500;
+    cantidad=cantidad-(a*500);
+    cout<<"500 : "<<a<<endl;
 
-    h=cantidad/500;
-    cantidad=cantidad-(h*500);
-    cout<<"500 : "<<h<<endl;
+    a=cantidad/200;
+    cantidad=cantidad-(a*200);
+    cout<<"200 : "<<a<<endl;
 
-    i=cantidad/100;
-    cantidad=cantidad-(i*100);
-    cout<<"100 : "<<i<<endl;
+    a=cantidad/100;
+    cantidad=cantidad-(a*100);
+    cout<<"100 : "<<a<<endl;
 
-    j=cantidad/50;
-    cantidad=cantidad-(j*50);
-    cout<<"50 : "<<j<<endl;
+    a=cantidad/50;
+    cantidad=cantidad-(a*50);
+    cout<<"50 : "<<a<<endl;
 
-    cout<<"Faltante: "<<cantidad<<endl;
+    cout<<"Faltante: "<<cantidad<<endl; //Se imprime lo que queda de la cantidad
     return 0;
 }
